@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/login_layout"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:layout_marginTop="30sp"
+        android:orientation="vertical"
+        android:layout_weight="5"
+
+        >
+        <EditText
+            android:id="@+id/edtEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderradius"
+            android:hint="Email"
+            android:padding="15sp"
+            android:drawableRight="@mipmap/foodapp_03"
+            />
+
+        <EditText
+            android:id="@+id/edtPassLogin"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderradius"
+            android:hint="Password"
+            android:padding="15sp"
+            android:drawableRight="@mipmap/foodapp_07"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/footer_18"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>

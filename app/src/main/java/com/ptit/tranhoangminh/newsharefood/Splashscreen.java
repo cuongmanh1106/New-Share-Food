@@ -52,6 +52,19 @@ public class Splashscreen extends AppCompatActivity implements GoogleApiClient.C
         } else {
             googleApiClient.connect();
         }
+
+
+        btnDangNhap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent login = new Intent(Splashscreen.this, LoginActivity.class);
+                startActivity(login);
+
+            }
+        });
+
+
+
     }
 
     //kiem tra vs request code tren.neu allow thi connect
